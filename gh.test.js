@@ -19,7 +19,7 @@ describe("Github page tests", () => {
   });
 
   test("The first link attribute", async () => {
-    const actual = await page.$eval("a", link => link.getAttribute('href') );
+    const actual = await page.$eval("a", link => link.getAttribute('href'));
     expect(actual).toEqual("#start-of-content");
   });
 
